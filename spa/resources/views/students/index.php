@@ -60,7 +60,7 @@ ob_start();
                     <td>
                         <div class="td-actions">
                             <a href="/students/<?= e($student['id']) ?>/edit"
-                               class="btn btn-secondary btn-sm">✏️ Editar</a>
+                               class="btn btn-secondary btn-sm">Editar</a>
                             <button class="btn btn-danger btn-sm"
                                     @click="deleteId = '<?= e($student['id']) ?>'; deleteName = '<?= e(addslashes($student['name'])) ?>'">
                                 🗑️

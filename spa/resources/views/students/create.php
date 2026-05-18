@@ -12,7 +12,7 @@ ob_start();
 
 <div class="page-header">
     <div>
-        <div class="page-title">👩‍🎓 Nou estudiant</div>
+        <div class="page-title">Nou estudiant</div>
         <div class="page-subtitle">Registra un nou estudiant al sistema</div>
     </div>
     <a href="/students" class="btn btn-secondary">← Tornar</a>
@@ -71,7 +71,7 @@ ob_start();
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="btn btn-primary">✅ Crear estudiant</button>
+                <button type="submit" class="btn btn-primary">Crear estudiant</button>
                 <a href="/students" class="btn btn-secondary">Cancel·lar</a>
             </div>
 

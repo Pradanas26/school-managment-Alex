@@ -70,7 +70,7 @@ ob_start();
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="btn btn-primary">✅ Crear professor</button>
+                <button type="submit" class="btn btn-primary">Crear professor</button>
                 <a href="/teachers" class="btn btn-secondary">Cancel·lar</a>
             </div>
 

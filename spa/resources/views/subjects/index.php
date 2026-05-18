@@ -69,10 +69,10 @@ ob_start();
                     <td>
                         <div class="td-actions">
                             <a href="/subjects/<?= e($subject['id']) ?>/edit"
-                               class="btn btn-secondary btn-sm">✏️</a>
+                               class="btn btn-secondary btn-sm">Editar</a>
                             <button class="btn btn-success btn-sm"
                                     @click="assignSubjectId = '<?= e($subject['id']) ?>'">
-                                👨‍🏫 Assignar
+                                Assignar
                             </button>
                             <button class="btn btn-danger btn-sm"
                                     @click="deleteId = '<?= e($subject['id']) ?>'; deleteName = '<?= e(addslashes($subject['name'])) ?>'">
@@ -112,7 +112,7 @@ ob_start();
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" @click="assignSubjectId = null">Cancel·lar</button>
-                        <button type="submit" class="btn btn-primary">✅ Assignar</button>
+                        <button type="submit" class="btn btn-primary">Assignar</button>
                     </div>
                 </form>
             </div>

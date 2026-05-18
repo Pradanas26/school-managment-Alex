@@ -12,7 +12,7 @@ ob_start();
 
 <div class="page-header">
     <div>
-        <div class="page-title">✏️ Editar estudiant</div>
+        <div class="page-title">Editar estudiant</div>
         <div class="page-subtitle"><?= e($student['name'] ?? '') ?></div>
     </div>
     <a href="/students" class="btn btn-secondary">← Tornar</a>

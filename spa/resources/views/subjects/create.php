@@ -80,7 +80,7 @@ ob_start();
             </div>
 
             <div class="form-actions">
-                <button type="submit" class="btn btn-primary">✅ Crear assignatura</button>
+                <button type="submit" class="btn btn-primary">Crear assignatura</button>
                 <a href="/subjects" class="btn btn-secondary">Cancel·lar</a>
             </div>
 

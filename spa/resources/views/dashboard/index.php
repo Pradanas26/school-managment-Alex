@@ -9,7 +9,7 @@ ob_start();
 
 <div class="page-header">
     <div>
-        <div class="page-title">📊 Dashboard</div>
+        <div class="page-title">Dashboard</div>
         <div class="page-subtitle">Resum general del sistema escolar</div>
     </div>
 </div>
@@ -66,7 +66,7 @@ ob_start();
     <!-- Recent Students -->
     <div class="card">
         <div class="card-header">
-            <span class="card-title">👩‍🎓 Últims estudiants</span>
+            <span class="card-title">Últims estudiants</span>
             <a href="/students" class="btn btn-secondary btn-sm">Veure tots</a>
         </div>
         <?php $recent = array_slice($students, -5); ?>
@@ -96,7 +96,7 @@ ob_start();
     <!-- Recent Teachers -->
     <div class="card">
         <div class="card-header">
-            <span class="card-title">👨‍🏫 Professors</span>
+            <span class="card-title">Professors</span>
             <a href="/teachers" class="btn btn-secondary btn-sm">Veure tots</a>
         </div>
         <?php if (empty($teachers)): ?>

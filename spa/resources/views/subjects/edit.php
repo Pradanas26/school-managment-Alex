@@ -12,7 +12,7 @@ ob_start();
 
 <div class="page-header">
     <div>
-        <div class="page-title">✏️ Editar assignatura</div>
+        <div class="page-title">Editar assignatura</div>
         <div class="page-subtitle"><?= e($subject['name'] ?? '') ?></div>
     </div>
     <a href="/subjects" class="btn btn-secondary">← Tornar</a>

@@ -380,18 +380,18 @@ $authUser = AuthMiddleware::user();
         <nav class="sidebar-nav">
             <div class="nav-section">General</div>
             <a href="/" class="nav-link <?= active('/') ?>">
-                <span class="nav-icon">📊</span> Dashboard
+                <span class="nav-icon"></span> Dashboard
             </a>
 
             <div class="nav-section" style="margin-top:.75rem">Gestió</div>
             <a href="/students" class="nav-link <?= active('/students') ?>">
-                <span class="nav-icon">👩‍🎓</span> Estudiants
+                <span class="nav-icon"></span> Estudiants
             </a>
             <a href="/teachers" class="nav-link <?= active('/teachers') ?>">
-                <span class="nav-icon">👨‍🏫</span> Professors
+                <span class="nav-icon"></span> Professors
             </a>
             <a href="/subjects" class="nav-link <?= active('/subjects') ?>">
-                <span class="nav-icon">📚</span> Assignatures
+                <span class="nav-icon"></span> Assignatures
             </a>
         </nav>
 
@@ -412,7 +412,7 @@ $authUser = AuthMiddleware::user();
                 </div>
             </div>
             <a href="/logout" style="display:block;text-align:center;font-size:.72rem;color:var(--gray-500);text-decoration:none;padding:.3rem;border-radius:6px;border:1px solid rgba(255,255,255,.1);transition:background .15s" onmouseover="this.style.background='rgba(255,255,255,.05)'" onmouseout="this.style.background=''">
-                🚪 Tancar sessió
+                Tancar sessió
             </a>
             <?php endif; ?>
             <div class="api-badge" style="margin-top:.6rem">
@@ -490,8 +490,8 @@ $authUser = AuthMiddleware::user();
             <?= $content ?>
         </main>
 
-    </div><!-- /.main -->
-</div><!-- /.shell -->
+    </div>
+</div>
 
 <script>
     // Auto-hide alerts after 4 seconds
