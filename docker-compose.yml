@@ -1,0 +1,39 @@
+services:
+  app:
+    build: .
+    container_name: tu-proyecto-app
+    restart: unless-stopped
+    env_file:
+      - .env
+    depends_on:
+      - db
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.tu-proyecto.rule=Host(`tu-proyecto.fpnuria.net`)"
+      - "traefik.http.services.tu-proyecto.loadbalancer.server.port=8000"
+    networks:
+      - internal
+      - proxy
+
+  db:
+    image: mysql:8.0
+    container_name: tu-proyecto-db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - internal
+
+volumes:
+  db_data:
+
+networks:
+  internal:
+    driver: bridge
+  proxy:
+    external: true
